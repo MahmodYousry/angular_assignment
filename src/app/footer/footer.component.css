@@ -1,0 +1,37 @@
+
+.contact-info {
+  background-color: #2C3E50;
+}
+
+.contact-info .social-links ul li {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+
+  -webkit-transition: all .4s ease 0s;
+  -moz-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+}
+
+.contact-info .social-links ul li:hover {
+  background-color: #1A252F;
+}
+
+.contact-info .social-links ul li:hover i {
+  color: wheat;
+}
+
+.contact-info .social-links ul li i {
+  color: white;
+  font-size: 20px;
+}
+
+.contact-info .social-links ul li a {
+  text-decoration: none;
+}
+
+.copyright {
+  background-color: #1A252F;
+}

@@ -1,0 +1,14 @@
+.home {
+  background-color: #1ABC9C;
+  height: 90vh;
+}
+
+.home .child img {
+  width: 250px;
+}
+
+.home .left-line, .right-line {
+  height: 4px;
+  background-color: white;
+  width: 80px;
+}
