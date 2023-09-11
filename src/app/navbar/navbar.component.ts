@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  constructor() {
+    this.paddingAnimation();
+  }
 
+  paddingAnimation() {
+    window.addEventListener("scroll", () => {
+      var scrollTop = document.documentElement.scrollTop;
+      if (scrollTop > 0) {
+        document.querySelector("nav")?.classList.remove("mypadding");
+      } else {
+        document.querySelector("nav")?.classList.add("mypadding");
+      }
+    });
+  }
 }

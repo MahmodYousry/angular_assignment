@@ -15,12 +15,32 @@ export class PortofolioComponent {
   }
 
   lightBox() {
-    let images = document.querySelectorAll(".cur-pointer img");
+    document.querySelectorAll(".col-12").forEach(box => {
+      box.addEventListener("click",() => {
+        box.querySelectorAll("img").forEach(img => {
+          let src = img.getAttribute("src");
+          this.setMainImg(src);
+          document.querySelector(".light-box")?.classList.remove("d-none");
+        });
+      });
+    })
+  }
 
-    for (let i = 0; i < images.length; i++) {
-      const element = images[i];
-      console.log(element);
-    }
+  setMainImg(src:any){
+    document.querySelector("#mainImg")?.setAttribute("src", src);
+    this.close();
+  }
+
+  close() {
+
+    document.querySelector(".light-box")?.addEventListener("click", (e) => {
+      e.stopPropagation();
+      document.querySelector(".light-box")?.classList.add("d-none");
+    });
+
+    document.querySelector("#mainImg")?.addEventListener("click",(e) => {
+      e.stopPropagation();
+    });
 
   }
 

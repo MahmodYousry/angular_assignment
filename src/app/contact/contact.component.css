@@ -1,0 +1,36 @@
+
+.contact-section {
+  margin-top: 118px;
+}
+
+form {
+  width: 915px;
+  display: block;
+  margin: auto;
+}
+
+input {
+  width: 100%;
+  border:none;
+  border-bottom: #ccc solid 1px;
+  outline: none;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.container {
+  margin: 60px auto;
+}
+
+.container div label {
+  color: #1ABC9C;
+  position: absolute;
+  z-index: 1;
+}
+
+button {
+  background-color: #1ABC9C;
+}

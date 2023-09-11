@@ -1,5 +1,10 @@
 .navbar {
   background-color: #2C3E50;
+  transition: all .3s ease 0s;
+}
+
+.mypadding {
+  padding: 20px 0;
 }
 
 .navbar .nav-item {

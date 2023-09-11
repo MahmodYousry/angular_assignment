@@ -1,3 +1,8 @@
+
+.portofolio {
+  margin-top: 100px;
+}
+
 .row .col-12 i {
   position: absolute;
   inset: 0;
@@ -19,8 +24,6 @@
 
 .light-box {
   z-index: 999999;
-  display: none;
-
 }
 
 .cur-pointer {
